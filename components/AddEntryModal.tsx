@@ -94,7 +94,7 @@ const AddEntryModal: React.FC<AddEntryModalProps> = ({ isOpen, onClose, onAddTra
             <input
               type="number"
               required
-              value={formData.amount || ''}
+              value={formData.amount ?? ''}
               onChange={e => setFormData(p => ({ ...p, amount: parseFloat(e.target.value) || 0 }))}
               className="w-full bg-transparent text-white text-5xl font-bold text-center outline-none"
               placeholder="0"

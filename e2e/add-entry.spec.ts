@@ -6,5 +6,5 @@ test('Add Entry Modal UI', async ({ page }) => {
   await expect(page.locator('.bg-\\[\\#1C1C1E\\]')).toBeVisible();
   await expect(page.getByText('Record Entry')).toBeVisible();
   await expect(page.getByPlaceholder('Notes')).toBeVisible();
-  await page.screenshot({ path: 'e2e/add-entry-modal.png' });
+  await page.screenshot({ path: 'e2e/add-entry-modal.png', fullPage: true });
 });
