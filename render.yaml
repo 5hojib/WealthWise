@@ -5,9 +5,5 @@ services:
     plan: free
     envVars:
       - key: MONGODB_URL
-        fromDatabase:
-          name: wealth-tracker-db
-          property: connectionString
-databases:
-  - name: wealth-tracker-db
-    plan: free
+        # value: ""
+        sync: false
